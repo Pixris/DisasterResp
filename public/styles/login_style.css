@@ -1,0 +1,88 @@
+div {
+    text-align: center;
+}
+
+/* Navbar base color */
+.navbar ul{
+    list-style-type: none;
+    background-color: #d30000;
+    padding: 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* Navbar text color */
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: right;
+}
+
+/* Navbar hover color */
+.navbar a:hover{
+    background-color: #7f0338;
+}
+
+/* Navbar text right */
+.navbar li{
+    float: right;
+}
+
+form {
+    text-align: center;
+}
+
+.new_pw {
+    color: dodgerblue;
+}
+
+.new_pw:hover {
+    color: darkblue;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+
+input[type=email], input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.copyright {
+    margin-left: auto;
+    padding-left: 100px;
+    padding-top: 100px;
+}

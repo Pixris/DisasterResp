@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: BLACK;
+}
+
+.nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative; /* Ensure this has a stacking context */
+    z-index: 10; /* Higher than the map */
+    margin-bottom: 10px;
+}
+
+.nav-right {
+    font-family: sans-serif;
+    display: flex;
+    margin-left: auto;
+}
+
+/*.nav-right {
+    font-family: sans-serif;
+    display: flex;
+    margin-left: auto;
+    padding-right: 20px; /* Add padding to the right of the nav-right container
+}*/
+
+.shelter-info {
+    background-color: #FFD3D2;
+    border: 1px solid transparent; /* Transparent border for a clean look */
+    border-radius: 8px; /* Soft edges */
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+/* Navbar base color */
+.navbar ul{
+    list-style-type: none;
+    background-color: #d30000;
+    padding: 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* Navbar text color */
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: right;
+}
+
+/* Navbar hover color */
+.navbar a:hover{
+    background-color: #7f0338;
+}
+
+/* Navbar text right */
+.navbar li{
+    float: right;
+}
+
+.main {
+    flex: 70%;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+a {
+    color: BLACK;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.copyright {
+    margin-left: auto;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.highlight {
+    text-decoration: underline;          /* Underline text */
+}
+
+/* Set the size of the map */
+#map {
+    height: 50vh; /* 50% height */
+    width: 50%; /* 50% width */
+    z-index: 1; /* Lower than the dropdown */
+    position: relative; /* Add this to ensure z-index works */
+}
